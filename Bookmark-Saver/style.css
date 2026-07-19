@@ -1,0 +1,105 @@
+:root{
+  --body-bg: #f0f9f4;
+  --font-family: 'sans-serif';
+  --container-bg: #fff;
+  --primary-color: #2ecc71;
+  --secondary-color: #ffffff;
+  --placeholder-color: #333;
+  --btn-hover: #27ae60;
+  --border: #ddd; 
+  --list-bg: #f9f9f9;
+  --remove-btn: #e74c3c;
+  --remove-btn-hover: #c0392b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+html,body{
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.bookmark-container{
+  background-color: var(--container-bg);
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.bookmark-container h1{
+  color: var(--primary-color);
+  margin-bottom: 1em;
+  text-align: center;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.input-container input{
+  background-color: var(--);
+  padding: .5em;
+  border-radius: 5px;
+  color: var(--placeholder-color);
+  font-size: 1em;
+  font-weight: 700;
+  border: 1px solid var(--border);
+}
+.input-container input:focus{ 
+  outline: none;
+  border-color: var(--btn-hover);
+  box-shadow: 0 4px 6px rgba(46,204,113,0.3);
+}
+.input-container button{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1em;
+  padding: .5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color .3s ease;
+}
+.input-container button:hover{
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+#bookmark-list{
+  list-style: none;
+}
+#bookmark-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4em;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin-bottom: .4em;
+}
+#bookmark-list li a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+#bookmark-list button{
+  background-color: var(--remove-btn);
+  color: var(--secondary-color);
+  padding: .4em;
+  border: none;
+  border-radius: 10px;
+  transition: background-color .3s ease;
+}
+#bookmark-list button:hover{
+  background-color: var(--remove-btn-hover);
+}

@@ -1,0 +1,127 @@
+:root{
+  --body-bg: #121212;
+  --font-family: 'sans-serif';
+  --container-bg: #1e1e1e;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac6;
+  --text-primary: #e1e1e1;
+  --text-secondary: #b0b0b0;
+  --border-color: #2c2c2c;
+  --btn-hover: #a66ae9;
+  --input-bg: #2c2c2c;
+  --shadow-color: rgba(0,0,0,0.3);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+html,body{
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+.newsletter-container{
+  background-color: var(--container-bg);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(var(--shadow-color));
+}
+.icon-container{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  margin-bottom: .75em;
+  color: var(--primary-color);
+}
+h2{
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: .5em;
+}
+p{
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.input-groups{
+  margin-bottom: 1em;
+  position: relative;
+}
+.input-groups i{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+input{
+  width: 100%;
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: .85em 2.5em;
+  border-radius: 7px;
+  transition: all .3s;
+}
+input:focus{
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 2px rgba(187,134,252,.25);
+}
+input::placeholder{
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+button{
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .85em;
+  font-size: 1rem;
+  border-radius: 7px;
+  margin-bottom: 1em;
+  gap: .5em;
+  font-weight: 500;
+  transition: all .3s;
+}
+button:hover{
+  background-color: var(--btn-hover);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+button i{
+  font-size: .9em;
+  transition: all .3s;
+}
+button i:hover{
+  transform: translateX(3px);
+}
+.subscription{
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+.subscription-items i{
+  color: var(--secondary-color);
+  font-size: .8em;
+}
+.subscription-items{
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  font-size: .95rem;
+}
