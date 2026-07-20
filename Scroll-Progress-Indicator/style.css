@@ -1,0 +1,88 @@
+:root{
+  --body-bg: #0a0a0a;
+  --font-family: Georgia,sans-serif;
+  --badge-font: system-ui,sans-serif;
+  --primary-color: #ccc;
+  --secondary-color: #6366f1;
+  --progressbar-bg: #8b5cf6;
+  --badge-bg: #111;
+  --badge-border: #222;
+  --heading-color: #fff;
+  --end-color: #555;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+html,body{
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.scroll-container{
+  width: 100%;
+  max-width: 800px;
+}
+.progress-bar{
+  position: fixed;
+  height: 5px;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg,var(--secondary-color),var(--progressbar-bg));
+  margin-bottom: 1em;
+}
+.badge-status{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: var(--secondary-color);
+  border-radius: 20px;
+  background-color: var(--badge-bg);
+  font-weight: bold;
+  padding: 1em 1.5em;
+  z-index: 100;
+  border: 2px solid var(--badge-border);
+  font-family: var(--badge-font);
+  transition: all .2s ease;
+}
+.badge-status.complete{
+  background-color: var(--secondary-color);
+  color: var(--heading-color);
+  border-color: var(--secondary-color);
+}
+.content{
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+.content h1{
+  font-size: 2.2rem;
+  color: var(--heading-color);
+  margin-bottom: 1em;
+}
+.content h2{
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  margin: 1.2em 0;
+}
+.content p{
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.content .end{
+  text-align: center;
+  color: var(--end-color);
+  font-style: italic;
+  margin-top: 3.5rem;
+}
