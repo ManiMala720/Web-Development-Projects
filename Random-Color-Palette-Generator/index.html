@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Color Palette Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="color-palette-container">
+      <h1>Color Palette Generator</h1>
+      <button id="generate-btn">
+        <i class="fas fa-arrows-rotate"></i>
+        Generate Palette
+      </button> 
+      <div class="color-palettes">
+        <!--Color 1-->
+        <div class="colors-container">
+          <div class="color-1 colors"></div>
+          <div class="color-txt">
+            <span class="copy-text">#FFCCCC</span>
+            <i class="far fa-copy copy-btn" title="Copy to Clipboard"></i>
+          </div>
+        </div>
+        <!--Color 2-->
+        <div class="colors-container">
+          <div class="color-2 colors"></div>
+          <div class="color-txt">
+            <span class="copy-text">#FF9999</span>
+            <i class="far fa-copy copy-btn" title="Copy to Clipboard"></i>
+          </div>
+        </div>
+        <!--Color 3-->
+        <div class="colors-container">
+          <div class="color-3 colors"></div>
+          <div class="color-txt">
+            <span class="copy-text">#FF6666</span>
+            <i class="far fa-copy copy-btn" title="Copy to Clipboard"></i>
+          </div>
+        </div>
+        <!--Color 4-->
+        <div class="colors-container">
+          <div class="color-4 colors"></div>
+          <div class="color-txt">
+            <span class="copy-text">#FF3333</span>
+            <i class="far fa-copy copy-btn" title="Copy to Clipboard"></i>
+          </div>
+        </div>
+        <!--Color 5-->
+        <div class="colors-container">
+          <div class="color-5 colors"></div>
+          <div class="color-txt">
+            <span class="copy-text">#CC0000</span>
+            <i class="far fa-copy copy-btn" title="Copy to Clipboard"></i>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
