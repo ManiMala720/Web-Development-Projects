@@ -1,3 +1,14 @@
+/*
+FLOW:
+Page Loads → User Clicks "Generate" → generateColorPalettes() → Generate 5 Random HEX Colors → Store in Array → displayColors() → Update Color Boxes & HEX Codes
+
+User Clicks Copy Icon OR Color Box
+      → Identify Clicked Element
+         ├── Copy Icon → Get HEX Code → Copy to Clipboard → showSuccess()
+         └── Color Box → Get Corresponding HEX Code → Copy to Clipboard → showSuccess()
+
+showSuccess() → Change Copy Icon to Checkmark → Highlight Success → Wait 1.5 Seconds → Restore Original Copy Icon
+*/
 const generateBtn = document.getElementById("generate-btn");
 const colorPalettes = document.querySelector(".color-palettes");
 

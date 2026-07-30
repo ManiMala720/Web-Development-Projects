@@ -1,3 +1,15 @@
+/*
+FLOW:
+Page Loads → User Scrolls → scrollProgress() Executes
+      → Get Current Scroll Position (scrollTop)
+      → Calculate Total Scrollable Height
+      → Calculate Scroll Percentage
+      → Update Progress Bar Width
+      → Update Badge Text (e.g., "45% read")
+      → Is Progress 100%? 
+         ├── Yes → Add "complete" Class → Display "✔ Complete"
+         └── No → Remove "complete" Class → Continue Updating Progress
+*/
 const progressBar = document.querySelector(".progress-bar");
 const badgeStatus = document.querySelector(".badge-status");
 

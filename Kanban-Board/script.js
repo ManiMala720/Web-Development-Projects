@@ -1,3 +1,18 @@
+/*
+FLOW:
+Page Loads → Select All Cards & Lists → Attach Drag Events to Cards (dragstart, dragend) → Attach Drop Zone Events to Lists (dragenter, dragover, dragleave, drop)
+
+User Starts Dragging a Card → dragStart() → Store Card ID using dataTransfer
+
+User Drags Over a List → dragEnter() → Prevent Default → Highlight List ("over" Class)
+                       → dragOver() → Prevent Default (Allows Dropping)
+
+User Leaves the List Without Dropping → dragLeave() → Remove Highlight
+
+User Drops the Card → dragDrop() → Get Card ID from dataTransfer → Find Card Element → Append Card to Target List → Remove Highlight
+
+Drag Ends → dragEnd() → Log "Drag Ended"
+*/
 const listItems = document.querySelectorAll(".lists");
 const cardItems = document.querySelectorAll(".cards");
 

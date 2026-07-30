@@ -1,4 +1,15 @@
-/* */
+/* 
+FLOW:
+Page Loads → fetchCurrencies() → Fetch Currency API → Get Currency List → Create <option> Elements → Populate "From" & "To" Dropdowns
+
+User Enters Amount & Selects Currencies → Clicks Convert → preventDefault() → Read Amount, From Currency & To Currency
+      → Is Amount Valid?
+         ├── No → Alert "Enter a valid amount" → Stop
+         └── Yes → Fetch Exchange Rate API (Based on From Currency)
+                  → Get Conversion Rate
+                  → Calculate Converted Amount
+                  → Display Result (Amount FromCurrency = ConvertedAmount ToCurrency)
+*/
 const converterForm = document.getElementById("converter-form");
 const amountInput = document.getElementById("amount");
 const fromCurrency = document.getElementById("from-currency");

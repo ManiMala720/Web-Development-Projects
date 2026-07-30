@@ -1,3 +1,12 @@
+/*
+FLOW:
+User Clicks Submit → preventDefault() → checkRequired() → All fields filled?
+      ├── No → Show Required Errors → Stop
+      └── Yes → Validate Username → Validate Email → Validate Password → Match Passwords
+                   → All Valid?
+                     ├── No → Show Validation Error(s) → Stop
+                     └── Yes → Alert "Registration Successful" → Reset Form → Clear Success/Error Classes
+*/
 const registerationForm = document.getElementById("registeration-form");
 const usernameInput = document.getElementById("username");
 const emailInput = document.getElementById("email");
@@ -6,8 +15,10 @@ const confirmPasswordInput = document.getElementById("confirm-password");
 
 registerationForm.addEventListener("submit",function(e){
   e.preventDefault();
+  // Check if all fields are filled.
   const isRequired = checkRequired([usernameInput,emailInput,passwordInput,confirmPasswordInput]);
   let isValidate = isRequired;
+  // Check the filled fields are valid.
   if(isValidate){
     const validateUsername = checkLength(usernameInput,3,15);
     const validateEmail = checkEmail(emailInput);
@@ -37,7 +48,7 @@ function checkRequired(inputArray){
   });
   return isRequired;
 }
-
+// Convert first character of the input into uppercase.
 function formatFieldName(input){
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
@@ -53,7 +64,6 @@ function showSuccess(input){
   const formElement = input.parentElement;
   formElement.className = "form-elements success";
 }
-
 
 function checkLength(input,min,max){
   if(input.value.length < min){

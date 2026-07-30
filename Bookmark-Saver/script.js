@@ -1,3 +1,20 @@
+/*
+FLOW:
+Page Loads → DOMContentLoaded → loadBookmarks() → getBookmarks() from localStorage → Display Each Bookmark
+
+User Enters Bookmark Name & URL → Clicks "Add Bookmark"
+      → Are Name & URL Filled?
+         ├── No → Alert "Please enter both name and url" → Stop
+         └── Yes → Is URL Valid (http:// or https://)?
+                     ├── No → Alert "Enter a valid url" → Stop
+                     └── Yes → Check if Bookmark Already Exists
+                                  ├── Yes → Alert "Bookmark already exists" → Stop
+                                  └── No → addBookmarks() → Display Bookmark
+                                           → Save Updated Bookmark List to localStorage
+                                           → Clear Input Fields
+
+User Clicks "Remove" → Remove Bookmark from UI → Filter Bookmark from localStorage → Save Updated Bookmark List
+*/
 const bookmarkName = document.getElementById("bookmark-name");
 const bookmarkURL = document.getElementById("bookmark-url")
 const addBookmarkBtn = document.getElementById("add-bookmark");
