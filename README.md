@@ -1,9 +1,9 @@
-# Web-Development-Projects
+# Web Development Projects
 
-A collection of small web development projects and UI components created while learning **HTML, CSS, and JavaScript**. Each project focuses on improving front-end development skills by building interactive components, responsive layouts, and practical web applications.
+A collection of responsive web development projects built while learning **HTML, CSS, and JavaScript**. Each project focuses on improving front-end development skills by creating interactive applications, modern UI components, and responsive layouts.
 
-**Home Page:**  
-https://manimala720.github.io/web-development-projects/
+**🌐 Home Page:**  
+https://manimala720.github.io/Web-Development-Projects/
 
 ---
 
@@ -13,7 +13,7 @@ https://manimala720.github.io/web-development-projects/
 An interactive color palette generator that creates random colors and lets users copy HEX color codes.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Random-Color-Palette-Generator/
+https://manimala720.github.io/Web-Development-Projects/Random-Color-Palette-Generator/
 
 ---
 
@@ -21,7 +21,7 @@ https://manimala720.github.io/web-development-projects/Random-Color-Palette-Gene
 A responsive Kanban Board built using the HTML Drag and Drop API, allowing users to organize and move task cards.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Kanban-Board/
+https://manimala720.github.io/Web-Development-Projects/Kanban-Board/
 
 ---
 
@@ -29,7 +29,7 @@ https://manimala720.github.io/web-development-projects/Kanban-Board/
 A responsive bookmark manager that saves website links using Local Storage.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Bookmark-Saver/
+https://manimala720.github.io/Web-Development-Projects/Bookmark-Saver/
 
 ---
 
@@ -37,7 +37,7 @@ https://manimala720.github.io/web-development-projects/Bookmark-Saver/
 A responsive registration form with real-time validation using HTML, CSS, and JavaScript.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Registration-Form-Validator/
+https://manimala720.github.io/Web-Development-Projects/Registration-Form-Validator/
 
 ---
 
@@ -45,15 +45,15 @@ https://manimala720.github.io/web-development-projects/Registration-Form-Validat
 A clean and responsive contact form built using HTML and CSS.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Professional-Contact-Form/
+https://manimala720.github.io/Web-Development-Projects/Professional-Contact-Form/
 
 ---
 
 ### 💳 Modern Pricing Cards
-A modern pricing cards interface featuring three pricing plans with a responsive design.
+A modern and responsive pricing cards interface featuring three pricing plans.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Modern-Pricing-Cards/
+https://manimala720.github.io/Web-Development-Projects/Modern-Pricing-Cards/
 
 ---
 
@@ -61,23 +61,23 @@ https://manimala720.github.io/web-development-projects/Modern-Pricing-Cards/
 A responsive team members showcase section built with HTML and CSS.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Team-Members-Showcase-Section/
+https://manimala720.github.io/Web-Development-Projects/Team-Members-Showcase-Section/
 
 ---
 
 ### 💱 Real Time Currency Converter
-A responsive currency converter that uses live exchange rates for instant conversions.
+A responsive currency converter that uses live exchange rates for instant currency conversion.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Real-Time-Currency-Converter/
+https://manimala720.github.io/Web-Development-Projects/Real-Time-Currency-Converter/
 
 ---
 
 ### ❌ Custom 404 Page Not Found Design
-A modern and responsive custom 404 error page built using HTML and CSS.
+A modern and responsive custom 404 page built using HTML and CSS.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Custom-404-Page-Not-Found-Design/
+https://manimala720.github.io/Web-Development-Projects/Custom-404-Page-Not-Found-Design/
 
 ---
 
@@ -85,7 +85,7 @@ https://manimala720.github.io/web-development-projects/Custom-404-Page-Not-Found
 A clean and responsive newsletter signup interface built using HTML and CSS.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Newsletter-Signup-UI/
+https://manimala720.github.io/Web-Development-Projects/Newsletter-Signup-UI/
 
 ---
 
@@ -93,4 +93,4 @@ https://manimala720.github.io/web-development-projects/Newsletter-Signup-UI/
 A responsive scroll progress indicator that visually displays page scrolling progress.
 
 **Live Demo:**  
-https://manimala720.github.io/web-development-projects/Scroll-Progress-Indicator/
+https://manimala720.github.io/Web-Development-Projects/Scroll-Progress-Indicator/
