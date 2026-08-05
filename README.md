@@ -2,8 +2,7 @@
 
 A collection of responsive web development projects built while learning **HTML, CSS, and JavaScript**. Each project focuses on improving front-end development skills by creating interactive applications, modern UI components, and responsive layouts.
 
-**🌐 Home Page:**  
-https://manimala720.github.io/Web-Development-Projects/
+**🌐 Home Page:**  https://manimala720.github.io/Web-Development-Projects/
 
 ---
 
